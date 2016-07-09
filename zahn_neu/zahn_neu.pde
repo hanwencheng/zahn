@@ -52,7 +52,7 @@ void draw()
 
     if (countDown == null) { // if no coundown running
       countDown = new CountDown(); // start new countdown
-      countDown.start(countdown);
+      countDown.start(countdown); //TODO maybe error here should be countdownTime
     } else if (countDown.running()) { // if countdown is running
       countDown.togglePause(); // pause/unpause it
     }
